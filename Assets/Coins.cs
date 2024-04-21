@@ -2,17 +2,17 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class NewBehaviourScript : MonoBehaviour
+public class Coins : MonoBehaviour
 {
     [SerializeField] private Text CoinCount;
-    [SerializeField] private int Coins;
+    [SerializeField] private int coins;
 
     void OnTriggerEnter(Collider other)
     {
         if(other.tag == "Coins")
         {
-            Coins++;
-            CoinCount.text = Coins.ToString();
+            coins++;
+            CoinCount.text = coins.ToString();
             Destroy(other.gameObject);
         }
     }

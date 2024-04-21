@@ -2,7 +2,7 @@ using JetBrains.Annotations;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class playermovement : MonoBehaviour
+public class PlayerMovement : MonoBehaviour
 {
 
     [SerializeField] private Rigidbody rb;
